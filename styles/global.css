@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-body{
-
-  border: solid 1px red;
-
-}
-
 :root {
 
 /*principal*/
@@ -40,14 +34,49 @@ body{
 body {
 
   font-family: var(--font-primary);
+  border: solid 1px red;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(/assets/Background_Intro.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+section.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 1040px;
+  height: 440px;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  border: solid 1px blue;
+}
+.test {
+  
+  height: 1040px;
+  width: 440px;
+  
+
 }
 
 h1,h2 {
 
+  border: solid 1px green ;
   font-family: var(--font-secondary); 
 }
 
 h3 {
-
+  
+  border: solid 1px yellow;
   font-family: var(--font-tertiary);
 }

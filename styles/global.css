@@ -28,55 +28,73 @@
 --font-primary: 'Asap', sans-serif;
 --font-secondary: 'Inconsolata', sans-serif;
 --font-tertiary: 'Maven Pro', sans-serif;
+--title-lg: 800 56px/120% var(--font-primary);
+--title-md: 800 24px/120% var(--font-primary);
+--title-sm: 800 16px/120% var(--font-primary);
+--subtitle: 400 20px/120% var(--font-secondary);
+--text-md: 400 16px/140% var(--font-tertiary);
+--text-sm: 400 14px/140% var(--font-tertiary);
 
 }
 
 body {
 
-  font-family: var(--font-primary);
   border: solid 1px red;
-}
-
-main {
   display: flex;
   flex-direction: column;
+  width: 1366px;
+  height: 750px;
+}
+
+#bg {
 
   background-image: url(/assets/Background_Intro.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
-section.intro {
+.container {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+    
   width: 1040px;
-  height: 440px;
+  height: auto;
+  min-height: 447px;
   max-width: 100%;
-  margin: 0 auto;
-  min-height: 100vh;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 183px;
   border: solid 1px blue;
-}
-.test {
-  
-  height: 1040px;
-  width: 440px;
-  
-
+    
 }
 
-h1,h2 {
+h1{
+  
+  color: var(--grey-100);
+  border: solid 1px purple;
+  font: var(--title-lg)
+}
 
+h2 {
+  
+  color: var(--grey-200);
   border: solid 1px green ;
-  font-family: var(--font-secondary); 
+  font: var(--title-md); 
+  
 }
 
 h3 {
   
   border: solid 1px yellow;
-  font-family: var(--font-tertiary);
+  font: var(--text-md);
+  color: var(--grey-300);
+  text-align: center;
 }
+
+  

@@ -170,3 +170,64 @@ h3 {
   text-align: center;
 }
 
+header#projetos {
+
+  background-color: var(--grey-500);
+  
+  h3{
+    font: var(--subtitle);
+    color: var(--red);
+  }
+
+  h2{
+    font: var(--title-md);
+    color: var(--grey-100);
+  }
+    
+}
+
+section#projetos {
+
+  background-color: var(--grey-500);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1366px;
+  height: 917px;
+  background-color: var(--grey-500);
+  padding: 50px 120px 144px 120px;
+
+    div{
+      
+      background-color: var(--grey-400);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+      gap: 8px;
+      width: 320px;
+      height: 280px;
+      
+    }    
+    
+    img{
+      border-radius: 12px;
+      
+    }
+
+    h4{
+      font: var(--title-sm);
+      color: var(--grey-100);}
+    
+    p{
+      font: var(--text-sm);
+      color: var(--grey-200);}
+        
+}
+      
+  
+  
+  
+
+

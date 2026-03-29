@@ -47,7 +47,7 @@ body {
   ;
 }
 
-section {
+section#intro{
 
   background-image: url(../assets/Background_Intro.png);
   background-size: cover;
@@ -88,7 +88,7 @@ section {
   }
 }
 
-section {
+section#projetos{
   
   display: flex;
   width: 100%;
@@ -115,6 +115,7 @@ header {
     object-fit: cover;
     margin-bottom: 65px;
     border: solid 4px var(--red);
+    justify-content: center;
   }
 }
 
@@ -191,11 +192,9 @@ section#projetos {
   background-color: var(--grey-500);
   display: grid;
   justify-items: center;
-  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   width: 1366px;
-  height: 917px;
-  background-color: var(--grey-500);
+  height: 800px;
   padding: 50px 120px 144px 120px;
 
     div{
@@ -207,7 +206,7 @@ section#projetos {
       padding: 12px;
       gap: 8px;
       width: 320px;
-      height: 280px;
+      height: 250px;
       
     }    
     
@@ -225,6 +224,37 @@ section#projetos {
       color: var(--grey-200);}
         
 }
+
+header#services {
+
+  border: solid 1px red;
+  background-color: var(--grey-600);
+}
+
+section#services {
+
+  display: flex;
+  border: solid 1px red;
+  width: 1366px;
+  height: 480px;
+  padding: 88px 120px 120px 120px;
+  background-color: var(--grey-600);
+
+
+  figure {
+    
+    border: solid 1px red;
+    
+    
+    
+  }
+}
+    
+    
+
+
+  
+
       
   
   

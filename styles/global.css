@@ -37,7 +37,6 @@
 
 }
 
-
 body {
   
   display: flex;
@@ -45,9 +44,11 @@ body {
   flex-direction: column;
   max-width: 1366px;
   width: 100% ;
+ 
+  @media (max-width:1366px){
+    flex-direction: column;
+  }
 }
-  
-  
 
 section#intro{
 
@@ -217,9 +218,11 @@ section#projetos {
       
     }
 
-    h4{
+    a{
+      margin-top: 6px;
       font: var(--title-sm);
-      color: var(--grey-100);}
+      color: var(--grey-100);
+      text-decoration: none;}
     
     p{
       font: var(--text-sm);
@@ -247,7 +250,7 @@ section#services {
   width: 100%;
   max-width: 1366px;
   height: 480px;
-  padding: 88px 120px 120px 120px;
+  padding: 20px 120px 120px 120px;
   background-color: var(--grey-600);
 
 
